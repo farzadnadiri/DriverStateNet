@@ -1,16 +1,18 @@
-# DriverStateNet
+# 🚗 DriverStateNet
 
 Detecting driver impairment (cognitive distraction, alcohol intoxication, or both) from
 driving-simulator sensor and video data: gaze, steering, vehicle dynamics, and
 front-camera frames, using [Toyota Research Institute's Impaired Driving Dataset
 (IDD)](https://toyotaresearchinstitute.github.io/IDD/).
 
-This README is a case study, not just a setup guide: what was tried, what actually
+An ML case study comparing classical, transformer, and multimodal fusion models for driver-impairment detection on a small, imbalanced dataset, diagnosing why bigger models underperformed and fixing it to reach the project's first statistically significant result (UAR +0.10 over baseline, p=0.004).
+
+This explains what was tried, what actually
 worked, what didn't, and why. That includes a fix that took the project's only
 statistically significant result from "doesn't exist" to "UAR +0.10 over baseline,
 p=0.004".
 
-## The task
+## 🎯 The task
 
 4-way classification of ~30s driving-scenario windows into `baseline`,
 `cognitive_distraction`, `alcohol_intoxication`, or `combined`, evaluated with 5-fold
@@ -28,7 +30,7 @@ The class imbalance and small participant count are the central constraint on
 everything below. Most of this case study is about what that constraint does to model
 selection, not about a particular architecture.
 
-## Results
+## 📊 Results
 
 | Model | Features | UAR | 95% CI | vs. baseline |
 |---|---|---:|---|---|
@@ -39,8 +41,8 @@ selection, not about a particular architecture.
 | multimodal (fusion, +video) | 84 channels + 8 video frames | 0.349 | [0.29, 0.42] | -0.027, n.s. |
 | multimodal (video-only) | 8 video frames | 0.258 | n/a | -0.118, n.s. |
 | handcrafted linear SVM | 10 hand-picked features | 0.417 | [0.36, 0.48] | +0.041, n.s. |
-| **handcrafted logistic regression** | 10 hand-picked features | **0.440** | [0.38, 0.50] | **+0.064, p=0.025** |
-| **ensemble** (handcrafted LR + handcrafted SVM + transformer + multimodal tabular) | mixed | **0.478** | [0.40, 0.56] | **+0.102, p=0.004** |
+| **handcrafted logistic regression** | 10 hand-picked features | **0.440** | [0.38, 0.50] | ✅ **+0.064, p=0.025** |
+| **ensemble** (handcrafted LR + handcrafted SVM + transformer + multimodal tabular) | mixed | **0.478** | [0.40, 0.56] | ✅ **+0.102, p=0.004** |
 
 *CIs and p-values are a participant-level bootstrap (2000 resamples). See
 [`artifacts/ensemble/bootstrap_ci.csv`](artifacts/ensemble/bootstrap_ci.csv) and
@@ -48,7 +50,6 @@ selection, not about a particular architecture.
 "n.s." means not statistically distinguishable from the baseline at this sample size.*
 
 ![UAR with 95% bootstrap CIs](artifacts/ensemble/bootstrap_ci.png)
-![Final ensemble confusion matrix](artifacts/ensemble/ensemble_confusion_matrix.png)
 
 The ensemble is the only result in the project that clears statistical significance
 against the naive baseline. It is *not* significantly better than the best single
@@ -57,9 +58,9 @@ model (handcrafted logistic regression) on its own: delta +0.038, p=0.213
 That's an honest, disclosed limit on how much the ensembling is really buying, not
 a second headline claim.
 
-## What actually happened (three findings)
+## 🔍 What actually happened (three findings)
 
-**1. More features hurt, at this sample size.** The same linear model, run twice: 196
+**1. 📉 More features hurt, at this sample size.** The same linear model, run twice: 196
 generic per-channel statistics (mean/std/min/max/...) gets UAR 0.376; 10 hand-picked
 domain features (gaze std, pupil diameter, steering-reversal rate, longitudinal accel)
 gets UAR 0.440
@@ -69,7 +70,7 @@ vs.
 With ~290 training rows per fold, feature selection did more for accuracy than
 switching model families did.
 
-**2. A weighted oversampler was quietly making the temporal transformer worse.** The
+**2. ⚖️ A weighted oversampler was quietly making the temporal transformer worse.** The
 first pass at the transformer used focal loss *and* a per-batch class-weighted sampler
 to fight the 148-vs-37 class imbalance: the standard playbook. It scored UAR 0.325,
 *below* every classical baseline. A hyperparameter sweep
@@ -88,7 +89,7 @@ only a diagnosis that had to be redone per architecture. See the config comments
 [`notebooks/04_multimodal.ipynb`](notebooks/04_multimodal.ipynb) for the full sweep
 results and reasoning.
 
-**3. The ensemble was silently excluding its own best model.** The original ensembling
+**3. 🧩 The ensemble was silently excluding its own best model.** The original ensembling
 notebook hardcoded four components (`linear_svm + temporal_transformer +
 multimodal_tabular_only + multimodal_fusion`) and never included the
 `handcrafted_baseline` models, even though handcrafted logistic regression was
@@ -105,7 +106,7 @@ the single biggest lever (0.416 -> 0.478), and throwing *every* available model 
 ensemble (0.420) was worse than the curated four-model subset. More models is not
 automatically better.
 
-## Method
+## 🧪 Method
 
 - **Cross-validation**: 5 fixed folds, split by participant (`fixed_fold` in
   `src/data_bootstrap.py`) so the same person's scenarios never appear in both train and
@@ -132,25 +133,25 @@ small to spare one). That's a standard compromise at this scale, but it means th
 reported deep-model numbers carry slightly more optimism than a fully nested
 cross-validation would.
 
-## What I'd do differently with more time or data
+## 🚀 What I'd do differently with more time or data
 
-- **More participants is the real fix.** No architecture change gets around ~290
+- **👥 More participants is the real fix.** No architecture change gets around ~290
   training rows for a 4-way imbalanced problem; everything above is squeezing signal
   out of a dataset that's fundamentally too small for the deep models it's being asked
   to support.
-- **The video branch needs real data or a different objective.** Video-only scores
+- **🎥 The video branch needs real data or a different objective.** Video-only scores
   near chance even with a frozen ImageNet backbone. ~300 clips isn't enough to learn a
   useful driver-state signal from pixels. Worth trying either a task-specific
   pretraining objective (e.g. gaze/landmark prediction) or dropping the from-scratch
   video branch entirely in favor of an off-the-shelf face/gaze estimator's outputs as
   additional handcrafted features.
-- **Target `alcohol_intoxication` and `combined` directly.** They're the hardest and
+- **🎯 Target `alcohol_intoxication` and `combined` directly.** They're the hardest and
   smallest classes across every model (F1 0.20 to 0.33,
   [`ensemble_per_class_report.csv`](artifacts/ensemble/ensemble_per_class_report.csv)).
   A binary "any impairment" reformulation would be a more stable target at this
   sample size than 4-way classification.
 
-## Demo
+## ▶️ Demo
 
 The best single model (handcrafted logistic regression, fit on all folds) is served
 two ways, both backed by the same `predict()` function
@@ -177,7 +178,7 @@ Note this demo model is fit on *all* folds (no held-out set), so its expected
 real-world performance is the cross-validated number above (UAR 0.440), not whatever it
 scores on data it has already seen.
 
-## Reproducing
+## 🔁 Reproducing
 
 This repo ships the code and the *aggregate* results (metrics, confusion matrices,
 bootstrap CIs, figures), not the raw dataset or row-level predictions, which carry
@@ -199,7 +200,7 @@ install the matching CUDA build for your setup instead, e.g.:
 pip install --index-url https://download.pytorch.org/whl/cu128 torch torchvision
 ```
 
-## Project structure
+## 📁 Project structure
 
 ```
 src/                  reusable pipeline code (data loading, models, evaluation)
