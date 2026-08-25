@@ -1,0 +1,17 @@
+,value
+model_name,fusion
+uar,0.36883459204887775
+precision_macro,0.3521451717397412
+recall_macro,0.36883459204887775
+f1_macro,0.33828398663730924
+accuracy,0.3746630727762803
+num_samples,371
+tabular_num_features,84
+tabular_sequence_length,300
+num_video_frames,8
+image_size,96
+num_folds,5
+normalize_inputs,True
+loss_type,focal
+use_weighted_sampler,True
+video_backbone,resnet18

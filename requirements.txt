@@ -1,0 +1,15 @@
+boto3
+fastapi
+ipykernel
+joblib
+matplotlib
+numpy
+opencv-python-headless
+pandas
+PyYAML
+scikit-learn
+scipy
+seaborn
+torch
+torchvision
+uvicorn[standard]

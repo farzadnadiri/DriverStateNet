@@ -1,0 +1,4 @@
+config,loss_type,use_weighted_sampler,dropout,weight_decay,uar,f1_macro
+focal_sampler_wd1e3_drop3,focal,True,0.3,0.001,0.35809131344845635,0.3205053294229476
+ce_sampler,ce,True,0.2,0.0001,0.3271970950542379,0.2997252074150166
+focal_nosampler,focal,False,0.2,0.0001,0.3268576661433804,0.3173422156636246

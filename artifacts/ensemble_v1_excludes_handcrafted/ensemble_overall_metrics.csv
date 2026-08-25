@@ -1,0 +1,10 @@
+,value
+model_name,ensemble(linear_svm+temporal_transformer+multimodal_tabular_only+multimodal_fusion)
+uar,0.4031717156717157
+precision_macro,0.38316001057702637
+recall_macro,0.4031717156717157
+f1_macro,0.38219719615641223
+accuracy,0.444743935309973
+num_samples,371
+num_models,4
+component_models,linear_svm+temporal_transformer+multimodal_tabular_only+multimodal_fusion

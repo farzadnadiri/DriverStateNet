@@ -1,0 +1,10 @@
+,value
+model_name,ensemble(handcrafted_logistic_regression+handcrafted_linear_svm+temporal_transformer+multimodal_tabular_only)
+uar,0.4780334691048977
+precision_macro,0.4543601057847381
+recall_macro,0.4780334691048977
+f1_macro,0.4589010649181608
+accuracy,0.5283018867924528
+num_samples,371
+num_models,4
+component_models,handcrafted_logistic_regression+handcrafted_linear_svm+temporal_transformer+multimodal_tabular_only

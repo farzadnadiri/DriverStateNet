@@ -1,0 +1,10 @@
+,value
+model_name,linear_svm
+uar,0.41728895300323876
+precision_macro,0.4134271413110699
+recall_macro,0.41728895300323876
+f1_macro,0.4128420412792527
+accuracy,0.5175202156334232
+num_samples,371
+num_features,10
+num_folds,5

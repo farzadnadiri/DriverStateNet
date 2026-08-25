@@ -1,0 +1,17 @@
+,value
+model_name,tabular_only
+uar,0.35809131344845635
+precision_macro,0.33891383773459244
+recall_macro,0.35809131344845635
+f1_macro,0.3205053294229476
+accuracy,0.353099730458221
+num_samples,371
+tabular_num_features,84
+tabular_sequence_length,300
+num_video_frames,8
+image_size,96
+num_folds,5
+normalize_inputs,True
+loss_type,focal
+use_weighted_sampler,True
+video_backbone,resnet18

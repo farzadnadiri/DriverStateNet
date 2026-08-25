@@ -1,0 +1,5 @@
+feat__gaze_fixation__change_rate,feat__gaze_pitch__std,feat__gaze_saccade__change_rate,feat__gaze_yaw__std,feat__longitudinal_acceleration__neg_mean,feat__longitudinal_acceleration__pos_mean,feat__longitudinal_speed__pos_mean,feat__reversals_0_5__sum_rate,feat__reversals_2_5__sum_rate,feat__tobii_eye_pupil_diameter__mean,true_label
+230.0,3.527048,302.0,7.129008,0.472298,0.338998,9.440594,16.0,4.0,3.037943,baseline
+194.0,0.60718,246.0,3.995402,0.246276,0.215903,10.955395,10.0,0.0,2.923191,cognitive_distraction
+228.0,2.860411,336.0,5.211053,0.463407,0.515628,8.060092,8.0,2.0,3.903668,alcohol_intoxication
+216.0,2.781649,268.0,6.345371,0.831836,0.516863,14.888658,18.0,4.0,3.788354,combined

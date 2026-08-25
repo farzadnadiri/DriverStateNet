@@ -1,0 +1,4 @@
+model_name,uar,precision_macro,recall_macro,f1_macro,accuracy,num_samples,tabular_num_features,tabular_sequence_length,num_video_frames,image_size,num_folds,normalize_inputs,loss_type,use_weighted_sampler,video_backbone
+tabular_only,0.35458211351068497,0.3415144535360694,0.35458211351068497,0.32908164545673724,0.3692722371967655,371,84,300,8,96,5,True,focal,True,resnet18
+video_only,0.1903382974811546,0.1763392857142857,0.1903382974811546,0.068706964585183,0.09164420485175202,371,84,300,8,96,5,True,focal,True,resnet18
+fusion,0.36883459204887775,0.3521451717397412,0.36883459204887775,0.33828398663730924,0.3746630727762803,371,84,300,8,96,5,True,focal,True,resnet18

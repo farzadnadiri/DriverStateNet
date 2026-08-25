@@ -1,0 +1,6 @@
+model_name,fixed_fold,validation_fold,num_train,num_val,num_test,best_epoch,normalize_inputs,loss_type,use_weighted_sampler,video_backbone,uar,precision_macro,recall_macro,f1_macro,accuracy
+video_only,0,1,217,72,82,7,True,focal,True,resnet18,0.1875,0.022388059701492536,0.1875,0.04,0.07317073170731707
+video_only,1,2,229,70,72,1,True,focal,True,resnet18,0.25,0.027777777777777776,0.25,0.05,0.1111111111111111
+video_only,2,3,230,71,70,1,True,focal,True,resnet18,0.25,0.02857142857142857,0.25,0.05128205128205128,0.11428571428571428
+video_only,3,4,224,76,71,1,True,focal,True,resnet18,0.28125,0.1539855072463768,0.28125,0.10194805194805195,0.1267605633802817
+video_only,4,0,213,82,76,1,True,focal,True,resnet18,0.25,0.02631578947368421,0.25,0.047619047619047616,0.10526315789473684

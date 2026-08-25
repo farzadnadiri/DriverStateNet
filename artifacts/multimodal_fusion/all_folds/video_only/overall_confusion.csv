@@ -1,0 +1,5 @@
+,baseline,cognitive_distraction,alcohol_intoxication,combined
+baseline,0,0,80,68
+cognitive_distraction,0,0,82,65
+alcohol_intoxication,0,0,22,15
+combined,0,0,22,17

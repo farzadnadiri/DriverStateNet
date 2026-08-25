@@ -1,0 +1,10 @@
+,value
+model_name,logistic_regression
+uar,0.7039250669045495
+precision_macro,0.6560516076182674
+recall_macro,0.7039250669045495
+f1_macro,0.6674866514111366
+accuracy,0.7466307277628033
+num_samples,371
+num_features,10
+num_folds,5

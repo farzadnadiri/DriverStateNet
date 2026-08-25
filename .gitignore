@@ -1,0 +1,44 @@
+# Raw dataset (downloaded locally, not redistributed) -- keep data/README.md though.
+/data/*
+!/data/README.md
+
+# Vendored third-party research repo (Toyota Research Institute's DBM/IDD pipeline).
+# No LICENSE file ships with it, so it is not redistributed here -- clone it separately
+# per data/README.md.
+/dataset
+
+# Python / virtualenv
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Claude Code local session state
+.claude/
+
+# Dataset-derived caches: large, and some (the multimodal window cache) contain raw
+# video pixels sampled from participant recordings. Regenerate locally via the
+# notebooks -- see the "Reproducing" section of README.md.
+artifacts/**/window_cache/
+artifacts/handcrafted_baseline/handcrafted_feature_table.csv
+artifacts/handcrafted_baseline/handcrafted_feature_table.pkl
+artifacts/logreg_baseline/scenario_window_features.csv
+artifacts/logreg_baseline/scenario_window_features.pkl
+artifacts/*/held_out_fold_*/
+
+# Per-scenario dataset dumps -- these carry raw participant identifiers and per-person
+# intoxication labels (see participant_name / intoxicated columns), not just aggregate
+# metrics.
+artifacts/bootstrap/
+
+# Every model's row-level predictions.csv carries the same participant_name /
+# intoxicated columns for each of the 371 scenario windows. The aggregate files derived
+# from them (overall_metrics, per_class_report, confusion, fold_metrics, history,
+# bootstrap_ci, significance_*, the PNGs) contain no participant-level data and are kept.
+**/predictions.csv
+**/ensemble_predictions.csv
+
+# Trained model weights (regenerate via scripts/fit_final_model.py)
+artifacts/handcrafted_baseline/final_model.joblib

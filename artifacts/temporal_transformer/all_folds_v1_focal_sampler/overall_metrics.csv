@@ -1,0 +1,14 @@
+,value
+model_name,temporal_transformer
+uar,0.32469292290720864
+precision_macro,0.3251131625967838
+recall_macro,0.32469292290720864
+f1_macro,0.31812985249812586
+accuracy,0.3746630727762803
+num_samples,371
+num_features,84
+sequence_length,300
+num_folds,5
+normalize_inputs,True
+loss_type,focal
+use_weighted_sampler,True
