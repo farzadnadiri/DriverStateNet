@@ -1,0 +1,10 @@
+feature,intox_diff,intox_p,cd_diff,cd_p,both_diff,both_p
+longitudinal_speed__pos_mean,0.796,0.1231,-0.028,0.9202,1.180,0.0484
+longitudinal_acceleration__pos_mean,0.117,0.0136,-0.064,0.0080,0.069,0.1893
+longitudinal_acceleration__neg_mean,0.134,0.0032,-0.020,0.5418,0.117,0.0441
+reversals_0_5__sum_rate,3.400,0.0012,0.529,0.3198,3.633,0.0066
+reversals_2_5__sum_rate,1.233,0.0187,-0.109,0.3439,0.817,0.0826
+gaze_yaw__std,-0.989,0.0049,-0.514,0.0014,-1.042,0.0010
+gaze_fixation__change_rate,-41.517,0.0000,-21.324,0.0000,-55.883,0.0001
+gaze_saccade__change_rate,-68.683,0.0000,-19.606,0.0011,-78.167,0.0000
+tobii_eye_pupil_diameter__mean,-0.007,1.0000,0.073,0.0000,0.116,0.0696

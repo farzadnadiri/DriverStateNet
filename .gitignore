@@ -42,3 +42,12 @@ artifacts/bootstrap/
 
 # Trained model weights (regenerate via scripts/fit_final_model.py)
 artifacts/handcrafted_baseline/final_model.joblib
+
+# TRF study: row-level trip tables, window features, and predictions carry participant
+# IDs and per-person intoxication labels. Only aggregate results under artifacts/study/
+# are committed.
+artifacts/study/private/
+
+# Vector (PDF) copies of the study figures are only needed for journal upload; the PNGs are
+# committed and regenerated with `python -m scripts.study.figures`.
+artifacts/study/figures/*.pdf

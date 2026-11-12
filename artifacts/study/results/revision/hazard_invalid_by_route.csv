@@ -1,0 +1,8 @@
+scenario_code,annotation
+1a,fail - hazard very early; fail - speeding - ped crosses early
+2,fail - missed
+3c,fail - missed
+5,fail - ok - slows down a lot
+6e,fail - crash - but ado not visible for most - discard?; fail - hazard late
+7a,fail - hazard way too fast; fail - no hazard?; fail - wierd behavior
+8a,fail - hazard vanishes; fail - speeding - missed

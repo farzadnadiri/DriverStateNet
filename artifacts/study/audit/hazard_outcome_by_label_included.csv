@@ -1,0 +1,16 @@
+hazard_outcome,baseline,cognitive_distraction,alcohol_intoxication,combined
+crash,6,9,3,8
+fail - crash - but ado not visible for most - discard?,2,3,0,0
+fail - hazard late,0,1,0,2
+fail - hazard vanishes,0,2,0,0
+fail - hazard very early,0,0,0,1
+fail - hazard way too fast,1,0,0,0
+fail - missed,2,0,0,0
+fail - no hazard?,0,1,0,0
+fail - ok - slows down a lot,2,0,0,0
+fail - speeding - missed,0,1,0,0
+fail - speeding - ped crosses early,0,1,0,0
+fail - wierd behavior,0,1,0,0
+near,26,26,4,2
+ok,108,102,30,26
+ok/crash,1,0,0,0

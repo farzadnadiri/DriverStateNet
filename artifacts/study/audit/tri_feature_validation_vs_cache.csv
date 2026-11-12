@@ -1,0 +1,11 @@
+feature,n_matched,max_abs_diff,corr
+tri__longitudinal_speed__pos_mean,371,3.552713678800501e-15,1.0
+tri__longitudinal_acceleration__pos_mean,371,2.220446049250313e-16,0.9999999999999999
+tri__longitudinal_acceleration__neg_mean,371,2.220446049250313e-16,1.0
+tri__reversals_0_5__sum_rate,371,0.0,1.0
+tri__reversals_2_5__sum_rate,371,0.0,1.0
+tri__tobii_eye_pupil_diameter__mean,371,0.0022531617034928786,0.9999996314601093
+tri__gaze_pitch__std,371,0.07932473909500048,0.9999350070025923
+tri__gaze_yaw__std,371,0.15726144544101395,0.9999758146366047
+tri__gaze_saccade__change_rate,371,3.5041782729805107,0.999940206906022
+tri__gaze_fixation__change_rate,371,5.337047353760454,0.9998191879533967

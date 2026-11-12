@@ -1,0 +1,4 @@
+exclusion_reason,baseline,cognitive_distraction,alcohol_intoxication,combined
+included,148,147,37,39
+removed_participant (DBM default),8,6,4,4
+simulator anomaly (DBM scenario_remove_anomalies),20,21,3,1

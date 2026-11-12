@@ -1,0 +1,101 @@
+trip_set,test,feature,n_participants,mean_diff,effect_r,p_value
+all,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",longitudinal_speed__pos_mean,20,0.7964584056815656,0.35060922587446647,0.11688763780953301
+all,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",longitudinal_acceleration__pos_mean,20,0.1167824161407796,0.5426095162342933,0.015240061183200121
+all,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",longitudinal_acceleration__neg_mean,20,0.13376092475830922,0.6344357420585583,0.0045499278703053396
+all,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",reversals_0_5__sum_rate,20,3.383333333333332,0.6807047170061679,0.0023329685267585174
+all,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",reversals_2_5__sum_rate,20,1.2333333333333334,0.5259227467927434,0.01867287405797882
+all,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",tobii_eye_pupil_diameter__mean,20,-0.006472882341930775,0.0,1.0
+all,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",gaze_pitch__std,20,-0.273139961254993,0.4591311291213251,0.04004379807224231
+all,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",gaze_yaw__std,20,-0.6404652017289355,0.3422613871631697,0.12585852473931722
+all,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",gaze_saccade__change_rate,20,-58.078776645041714,0.8765230646861663,8.857457687863547e-05
+all,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",gaze_fixation__change_rate,20,-45.11677479147359,0.8765994268472804,8.844915021211901e-05
+all,"TRI cd: sober trips, CD - no-CD",longitudinal_speed__pos_mean,52,-0.027854265014326786,0.01389192333910443,0.9202045328293107
+all,"TRI cd: sober trips, CD - no-CD",longitudinal_acceleration__pos_mean,52,-0.06367724059714647,0.367504517425399,0.008046490964229054
+all,"TRI cd: sober trips, CD - no-CD",longitudinal_acceleration__neg_mean,52,-0.019663337544590306,0.08461444215636335,0.5417535589685181
+all,"TRI cd: sober trips, CD - no-CD",reversals_0_5__sum_rate,52,0.5352564102564104,0.1401249980446174,0.3122769986424271
+all,"TRI cd: sober trips, CD - no-CD",reversals_2_5__sum_rate,52,-0.10576923076923071,0.12808674791575406,0.3556703042903202
+all,"TRI cd: sober trips, CD - no-CD",tobii_eye_pupil_diameter__mean,52,0.07321998162417646,0.6415542778422774,3.7223139821883416e-06
+all,"TRI cd: sober trips, CD - no-CD",gaze_pitch__std,52,-0.6702014186227848,0.7413235454594819,9.003839361298764e-08
+all,"TRI cd: sober trips, CD - no-CD",gaze_yaw__std,52,-0.4924214920516094,0.42054640653834324,0.0024245412629409283
+all,"TRI cd: sober trips, CD - no-CD",gaze_saccade__change_rate,52,-26.852320524702364,0.5771462696337022,3.156645713508319e-05
+all,"TRI cd: sober trips, CD - no-CD",gaze_fixation__change_rate,52,-25.023704284593993,0.6857558521030641,7.612206687142094e-07
+all,"TRI joint: v1, both - neither",longitudinal_speed__pos_mean,20,1.1802984499963571,0.44243545169873155,0.04785751139622271
+all,"TRI joint: v1, both - neither",longitudinal_acceleration__pos_mean,20,0.06906540403650371,0.30052219360668553,0.1789561131984324
+all,"TRI joint: v1, both - neither",longitudinal_acceleration__neg_mean,20,0.11675205459123725,0.45078329041002835,0.04380372353657391
+all,"TRI joint: v1, both - neither",reversals_0_5__sum_rate,20,3.633333333333333,0.6075167069391644,0.006589705026454776
+all,"TRI joint: v1, both - neither",reversals_2_5__sum_rate,20,0.8166666666666668,0.3967297430404046,0.07602522158023907
+all,"TRI joint: v1, both - neither",tobii_eye_pupil_diameter__mean,20,0.1165187466066226,0.4090440968535442,0.06735455698601128
+all,"TRI joint: v1, both - neither",gaze_pitch__std,20,-0.6634938957324141,0.7513054840167139,0.0007795932575314031
+all,"TRI joint: v1, both - neither",gaze_yaw__std,20,-0.7015547274862655,0.44243545169873155,0.04785751139622271
+all,"TRI joint: v1, both - neither",gaze_saccade__change_rate,20,-72.65894346617239,0.8599022949073323,0.0001202578206387046
+all,"TRI joint: v1, both - neither",gaze_fixation__change_rate,20,-60.122335495829475,0.8681752259748694,0.00010334649564653764
+all,"order control: v2 no-CD, R2 - R1 (no alcohol)",longitudinal_speed__pos_mean,32,0.568716853144266,0.27766508980767113,0.11624980613968175
+all,"order control: v2 no-CD, R2 - R1 (no alcohol)",longitudinal_acceleration__pos_mean,32,0.0024709209247385337,0.05288858853479451,0.7648003915420281
+all,"order control: v2 no-CD, R2 - R1 (no alcohol)",longitudinal_acceleration__neg_mean,32,0.022236367568146648,0.10577717706958902,0.5495956979066463
+all,"order control: v2 no-CD, R2 - R1 (no alcohol)",reversals_0_5__sum_rate,32,-0.16666666666666685,0.05892556509887895,0.7388826803635273
+all,"order control: v2 no-CD, R2 - R1 (no alcohol)",reversals_2_5__sum_rate,32,-0.13541666666666663,0.08731025710210441,0.6213758165728852
+all,"order control: v2 no-CD, R2 - R1 (no alcohol)",tobii_eye_pupil_diameter__mean,32,-0.08302717112028184,0.6247464520672601,0.0004091668253943447
+all,"order control: v2 no-CD, R2 - R1 (no alcohol)",gaze_pitch__std,31,-0.1940151654118064,0.4012393465629538,0.025482669410315743
+all,"order control: v2 no-CD, R2 - R1 (no alcohol)",gaze_yaw__std,31,1.0973503251193422,0.7180072517442331,6.396224246627829e-05
+all,"order control: v2 no-CD, R2 - R1 (no alcohol)",gaze_saccade__change_rate,31,-8.174235403151066,0.17598216954515516,0.3271713975221079
+all,"order control: v2 no-CD, R2 - R1 (no alcohol)",gaze_fixation__change_rate,31,-4.025232443421335,0.11439664758672602,0.5241681101012423
+all,"order control: v2 CD, R2 - R1 (no alcohol)",longitudinal_speed__pos_mean,32,0.2893452780872158,0.1884155966552054,0.2864961706198643
+all,"order control: v2 CD, R2 - R1 (no alcohol)",longitudinal_acceleration__pos_mean,32,0.022064251591340844,0.1289159345535616,0.46584345961384377
+all,"order control: v2 CD, R2 - R1 (no alcohol)",longitudinal_acceleration__neg_mean,32,-0.016000707405535792,0.019833220700547938,0.9106698728279151
+all,"order control: v2 CD, R2 - R1 (no alcohol)",reversals_0_5__sum_rate,32,0.19791666666666707,0.08268722233987433,0.6399636915064997
+all,"order control: v2 CD, R2 - R1 (no alcohol)",reversals_2_5__sum_rate,32,0.2916666666666665,0.23714614877781548,0.17975778054684544
+all,"order control: v2 CD, R2 - R1 (no alcohol)",tobii_eye_pupil_diameter__mean,32,-0.1085158779988293,0.604913231366712,0.0006218381179514873
+all,"order control: v2 CD, R2 - R1 (no alcohol)",gaze_pitch__std,29,0.09754380019202515,0.12246749342798106,0.5095698444848895
+all,"order control: v2 CD, R2 - R1 (no alcohol)",gaze_yaw__std,29,0.27791821154921437,0.20678937414888604,0.26545303243391527
+all,"order control: v2 CD, R2 - R1 (no alcohol)",gaze_saccade__change_rate,29,7.322872391422456,0.1746667529218746,0.3469051394778403
+all,"order control: v2 CD, R2 - R1 (no alcohol)",gaze_fixation__change_rate,29,2.8934837493208883,0.10841701492284347,0.559325613304338
+primary,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",longitudinal_speed__pos_mean,20,0.2671774294194515,0.09182622582426503,0.681322326150025
+primary,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",longitudinal_acceleration__pos_mean,20,0.11421124182320366,0.559305193656887,0.01237422010582018
+primary,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",longitudinal_acceleration__neg_mean,20,0.12803351605304875,0.5259138388116997,0.018674874007415902
+primary,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",reversals_0_5__sum_rate,20,3.6666666666666665,0.6929913537570398,0.0019407571899736017
+primary,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",reversals_2_5__sum_rate,20,1.3166666666666669,0.544625278222644,0.014865541175662862
+primary,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",tobii_eye_pupil_diameter__mean,20,0.003133992975715971,0.025043516133890463,0.910824985273362
+primary,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",gaze_pitch__std,20,-0.273139961254993,0.4591311291213251,0.04004379807224231
+primary,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",gaze_yaw__std,20,-0.6404652017289355,0.3422613871631697,0.12585852473931722
+primary,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",gaze_saccade__change_rate,20,-58.078776645041714,0.8765230646861663,8.857457687863547e-05
+primary,"TRI intoxicated: v1 no-CD, R2 (drunk) - R1 (sober)",gaze_fixation__change_rate,20,-45.11677479147359,0.8765994268472804,8.844915021211901e-05
+primary,"TRI cd: sober trips, CD - no-CD",longitudinal_speed__pos_mean,52,-0.10055893811456565,0.04925318274773389,0.7224624239878545
+primary,"TRI cd: sober trips, CD - no-CD",longitudinal_acceleration__pos_mean,52,-0.06604961407935112,0.41802060229486965,0.0025749704956411173
+primary,"TRI cd: sober trips, CD - no-CD",longitudinal_acceleration__neg_mean,52,-0.032629793780334086,0.16417727582577965,0.2364529777848301
+primary,"TRI cd: sober trips, CD - no-CD",reversals_0_5__sum_rate,52,0.5491452991452994,0.14829730589331203,0.2848952862816182
+primary,"TRI cd: sober trips, CD - no-CD",reversals_2_5__sum_rate,52,-0.14102564102564108,0.19200790599521683,0.16617826846401595
+primary,"TRI cd: sober trips, CD - no-CD",tobii_eye_pupil_diameter__mean,52,0.08006256770214538,0.6150333332858052,9.204304350236082e-06
+primary,"TRI cd: sober trips, CD - no-CD",gaze_pitch__std,52,-0.6702014186227848,0.7413235454594819,9.003839361298764e-08
+primary,"TRI cd: sober trips, CD - no-CD",gaze_yaw__std,52,-0.4924214920516094,0.42054640653834324,0.0024245412629409283
+primary,"TRI cd: sober trips, CD - no-CD",gaze_saccade__change_rate,52,-26.852320524702364,0.5771462696337022,3.156645713508319e-05
+primary,"TRI cd: sober trips, CD - no-CD",gaze_fixation__change_rate,52,-25.023704284593993,0.6857558521030641,7.612206687142094e-07
+primary,"TRI joint: v1, both - neither",longitudinal_speed__pos_mean,20,1.107400888561374,0.4090440968535442,0.06735455698601128
+primary,"TRI joint: v1, both - neither",longitudinal_acceleration__pos_mean,20,0.0558814262122541,0.20869596778242053,0.3506564539028397
+primary,"TRI joint: v1, both - neither",longitudinal_acceleration__neg_mean,20,0.12734860062306014,0.44243545169873155,0.04785751139622271
+primary,"TRI joint: v1, both - neither",reversals_0_5__sum_rate,20,3.7,0.6345174494697939,0.004544722899837811
+primary,"TRI joint: v1, both - neither",reversals_2_5__sum_rate,20,0.9,0.3967297430404046,0.07602522158023907
+primary,"TRI joint: v1, both - neither",tobii_eye_pupil_diameter__mean,20,0.13587505740995734,0.44243545169873155,0.04785751139622271
+primary,"TRI joint: v1, both - neither",gaze_pitch__std,20,-0.6634938957324141,0.7513054840167139,0.0007795932575314031
+primary,"TRI joint: v1, both - neither",gaze_yaw__std,20,-0.7015547274862655,0.44243545169873155,0.04785751139622271
+primary,"TRI joint: v1, both - neither",gaze_saccade__change_rate,20,-72.65894346617239,0.8599022949073323,0.0001202578206387046
+primary,"TRI joint: v1, both - neither",gaze_fixation__change_rate,20,-60.122335495829475,0.8681752259748694,0.00010334649564653764
+primary,"order control: v2 no-CD, R2 - R1 (no alcohol)",longitudinal_speed__pos_mean,31,0.0790545718154439,0.06687322442715896,0.7096439222421442
+primary,"order control: v2 no-CD, R2 - R1 (no alcohol)",longitudinal_acceleration__pos_mean,31,0.020033279928700826,0.2111786034541862,0.2396777232184626
+primary,"order control: v2 no-CD, R2 - R1 (no alcohol)",longitudinal_acceleration__neg_mean,31,0.018373661319049654,0.12670716207251173,0.4805142979085407
+primary,"order control: v2 no-CD, R2 - R1 (no alcohol)",reversals_0_5__sum_rate,31,-0.15053763440860213,0.05245522675623116,0.7702420168534599
+primary,"order control: v2 no-CD, R2 - R1 (no alcohol)",reversals_2_5__sum_rate,31,0.03225806451612907,0.017482007579727687,0.9224598070474369
+primary,"order control: v2 no-CD, R2 - R1 (no alcohol)",tobii_eye_pupil_diameter__mean,31,-0.06992297755298177,0.6405750971443648,0.00036168257762884325
+primary,"order control: v2 no-CD, R2 - R1 (no alcohol)",gaze_pitch__std,31,-0.1940151654118064,0.4012393465629538,0.025482669410315743
+primary,"order control: v2 no-CD, R2 - R1 (no alcohol)",gaze_yaw__std,31,1.0973503251193422,0.7180072517442331,6.396224246627829e-05
+primary,"order control: v2 no-CD, R2 - R1 (no alcohol)",gaze_saccade__change_rate,31,-8.174235403151066,0.17598216954515516,0.3271713975221079
+primary,"order control: v2 no-CD, R2 - R1 (no alcohol)",gaze_fixation__change_rate,31,-4.025232443421335,0.11439664758672602,0.5241681101012423
+primary,"order control: v2 CD, R2 - R1 (no alcohol)",longitudinal_speed__pos_mean,29,-0.02603517711963443,0.05420692332058178,0.7703529786474997
+primary,"order control: v2 CD, R2 - R1 (no alcohol)",longitudinal_acceleration__pos_mean,29,0.03706400477530031,0.22285068476239175,0.23010529565988946
+primary,"order control: v2 CD, R2 - R1 (no alcohol)",longitudinal_acceleration__neg_mean,29,-0.012131004403564166,0.018068974440193928,0.9224846577154711
+primary,"order control: v2 CD, R2 - R1 (no alcohol)",reversals_0_5__sum_rate,29,0.09195402298850604,0.05422118558998459,0.7702942541933518
+primary,"order control: v2 CD, R2 - R1 (no alcohol)",reversals_2_5__sum_rate,29,0.4597701149425287,0.2790647880890481,0.1328880785331619
+primary,"order control: v2 CD, R2 - R1 (no alcohol)",tobii_eye_pupil_diameter__mean,29,-0.08557699813821917,0.5521075523392588,0.0029472179607470846
+primary,"order control: v2 CD, R2 - R1 (no alcohol)",gaze_pitch__std,29,0.09754380019202515,0.12246749342798106,0.5095698444848895
+primary,"order control: v2 CD, R2 - R1 (no alcohol)",gaze_yaw__std,29,0.27791821154921437,0.20678937414888604,0.26545303243391527
+primary,"order control: v2 CD, R2 - R1 (no alcohol)",gaze_saccade__change_rate,29,7.322872391422456,0.1746667529218746,0.3469051394778403
+primary,"order control: v2 CD, R2 - R1 (no alcohol)",gaze_fixation__change_rate,29,2.8934837493208883,0.10841701492284347,0.559325613304338

@@ -1,0 +1,6 @@
+cohort,round,Anomaly inside pre90,Anomaly outside pre90 (whole trip excluded by default rule),Included,All
+Alcohol cohort,R1,6,1,73,80
+Alcohol cohort,R2,2,2,76,80
+Control cohort,R1,22,6,100,128
+Control cohort,R2,5,1,122,128
+All,,35,10,371,416

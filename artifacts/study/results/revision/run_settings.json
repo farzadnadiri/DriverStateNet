@@ -1,0 +1,5 @@
+{
+ "seed": 20261029,
+ "bootstrap_reps": 500,
+ "false_alarm_bootstrap_reps": 4000
+}

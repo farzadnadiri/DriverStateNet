@@ -1,0 +1,9 @@
+cohort,round,label,off_course_in_pre90,crash_in_pre90
+Alcohol cohort,R1,baseline,1,10
+Alcohol cohort,R1,cognitive_distraction,0,2
+Alcohol cohort,R2,alcohol_intoxication,0,10
+Alcohol cohort,R2,combined,0,8
+Control cohort,R1,baseline,2,2
+Control cohort,R1,cognitive_distraction,1,5
+Control cohort,R2,baseline,0,5
+Control cohort,R2,cognitive_distraction,1,5

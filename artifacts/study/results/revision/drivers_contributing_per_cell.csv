@@ -1,0 +1,5 @@
+cohort,round,nback_task,no_task,statement_task
+Alcohol cohort,R1,20,20,15
+Alcohol cohort,R2,20,20,19
+Control cohort,R1,28,31,23
+Control cohort,R2,29,32,32
