@@ -1,0 +1,44 @@
+{
+ "recorded": "2026-11-11",
+ "python": "3.14.5",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "dbm_code_commit": "vendored copy (not a separate git checkout); see data/README.md",
+ "inputs": {
+  "idd_annotation.csv": "549f3af85cb82959bc9a1fdc7b1c084b491249148822d37355ab999b195a8c97",
+  "folds.csv (participant folds)": "5298de3eea23fcb20702f3d3ae477b89dfdb17f782f8238c3e622efa23296f00",
+  "dataset version": "IDD public release, 'no-video' variant, downloaded via the DBM tools into data/IDD"
+ },
+ "seeds": {
+  "classification and transformer": 42,
+  "revision bootstraps": 20261029,
+  "false-alarm bootstraps": 20261029
+ },
+ "inclusion": "DBM defaults: 8 pilot/incomplete participants removed; trips with any annotated simulator anomaly removed (416 -> 371)",
+ "windows": {
+  "pre90": "[-120 s, -30 s] before trip end",
+  "pre30": "[-60 s, -30 s]",
+  "haz30": "last 30 s"
+ },
+ "scripts_sha256": {
+  "scripts/study/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scripts/study/build_features.py": "4b33f43d59ca1d6a87f05de422682c525406e507980698f864d019d16e6595d7",
+  "scripts/study/figures.py": "cf7d5902149c047a073fa2524b7d7b5bca34a55ebb47b5f272fd563ec5516448",
+  "scripts/study/record_provenance.py": "1c5752cf6089523f554f4b8a0cb88aeab63cb2c383c045c0c1a0ac882bb24335",
+  "scripts/study/report.py": "0fd82ea53b139a0362161f71c98f8f70bd621a1c2004d0fe2d1264ee50c5a4fe",
+  "scripts/study/run_analyses.py": "41c378f406dd5ed88b7a37a68c62deb4cb8bb0c2e743f4eb2e4444b6315a2b17",
+  "scripts/study/run_model_comparison.py": "de9e3370a14f002e988ef74e5f04d1a9fe7136913d340cd4bccf5a73d8a8693f",
+  "scripts/study/run_novelty.py": "73ab96ef87c21c9c6d699b42afb47365b0e68da345e789d386697428e9c0a7d8",
+  "scripts/study/run_revision.py": "847dba69da7ed9a3293acae24f4a30390548efc52a81aaa22678631685a5b7a7",
+  "src/study/__init__.py": "ec918b2f628996e66f04c16f80de424191f7fbf33851acb9723d5df8fb086cdf",
+  "src/study/features.py": "20cb27edc04e558d4bf8f31cdcae22fc668b7b320575544ff8105f39fb9717d3",
+  "src/study/models.py": "a288c5ade5c2f2cbde258b1ee6ccecb652c33fab59b87c6eea7b0ec91eb43f9f",
+  "src/study/sequence.py": "d394ee1b44a99612b0b5af097ba3e7b96727e95c671e0285087ea096cd6927b9",
+  "src/study/trips.py": "ac082ba56917acbd67d4f6f652115dbdc00989dbb1cb7c98fabab28d9b94d7be"
+ },
+ "chronology": [
+  "Apr 2026: course-project experiments on the hazard window (classification only).",
+  "27 Oct 2026: hypotheses H1-H5 and windows written (docs/HYPOTHESES.md) before pre-hazard analyses; primary constrained model, robustness, hazard response, model comparison.",
+  "28 Oct 2026: exploratory additions - task-specific CD, naive vs corrected, full model, collision GEE, cohort false alarms.",
+  "29 Oct 2026: revision - full factorial model promoted to main analysis; exclusion audit; inclusion, gaze-quality and log-scale sensitivity; participant bootstraps; hardened false-alarm diagnostics. All revision choices were made after earlier results were known."
+ ]
+}

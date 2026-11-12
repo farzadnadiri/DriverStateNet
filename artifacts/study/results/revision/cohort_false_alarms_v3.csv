@@ -1,0 +1,45 @@
+model,quantity,estimate,ci_low,ci_high,p_value,boot_n,n_trips,n_drivers,p_holm_across_models
+Logistic regression,cohort gap R1 (trip),0.2098630136986301,0.02283835186583763,0.3997648114483351,0.028,4000.0,,,0.056
+Logistic regression,cohort gap R1 (driver),0.2182291666666667,0.05833333333333335,0.376984126984127,0.0085,4000.0,,,0.017
+Logistic regression,cohort gap R1 (task_std),0.21029824561403512,0.02202470408149037,0.39755529926048794,0.0275,4000.0,,,0.055
+Logistic regression,cohort gap R1 (route_std),0.2105685425685426,0.019481933698689006,0.4102495726083596,0.030507626906726683,3999.0,,,0.061015253813453366
+Logistic regression,rate Alcohol cohort R1 (trip-weighted),0.3698630136986301,0.2054794520547945,0.547945205479452,,,73.0,20.0,
+Logistic regression,rate Alcohol cohort R1 (driver-weighted),0.3875,,,,,73.0,20.0,
+Logistic regression,rate Control cohort R1 (trip-weighted),0.16,0.07766990291262135,0.25252791068580543,,,100.0,32.0,
+Logistic regression,rate Control cohort R1 (driver-weighted),0.16927083333333331,,,,,100.0,32.0,
+Logistic regression,rate Control cohort R2 (trip-weighted),0.16393442622950818,0.088,0.2480500000000002,,,122.0,32.0,
+Logistic regression,rate Control cohort R2 (driver-weighted),0.17447916666666666,,,,,122.0,32.0,
+Logistic regression,control R2 - R1 (paired drivers),0.005208333333333336,-0.0703125,0.08072916666666666,0.8895,,,32.0,1.0
+Linear SVM,cohort gap R1 (trip),0.22397260273972602,0.06865530202322058,0.39207651155571577,0.0025,4000.0,,,0.01
+Linear SVM,cohort gap R1 (driver),0.23593749999999997,0.09758392375168694,0.37301587301587297,0.0015,4000.0,,,0.0045000000000000005
+Linear SVM,cohort gap R1 (task_std),0.22294736842105262,0.06871338262068546,0.3911524655187922,0.0025,4000.0,,,0.01
+Linear SVM,cohort gap R1 (route_std),0.22915440115440117,0.07511025720311433,0.40035143190143185,0.0025012506253126563,3998.0,,,0.010005002501250625
+Linear SVM,rate Alcohol cohort R1 (trip-weighted),0.273972602739726,0.13513513513513514,0.44285714285714284,,,73.0,20.0,
+Linear SVM,rate Alcohol cohort R1 (driver-weighted),0.2958333333333333,,,,,73.0,20.0,
+Linear SVM,rate Control cohort R1 (trip-weighted),0.05,0.00961309523809524,0.10679611650485436,,,100.0,32.0,
+Linear SVM,rate Control cohort R1 (driver-weighted),0.05989583333333333,,,,,100.0,32.0,
+Linear SVM,rate Control cohort R2 (trip-weighted),0.09016393442622951,0.03967472815898013,0.152,,,122.0,32.0,
+Linear SVM,rate Control cohort R2 (driver-weighted),0.09114583333333333,,,,,122.0,32.0,
+Linear SVM,control R2 - R1 (paired drivers),0.03125,-0.026041666666666664,0.0859375,0.2825,,,32.0,1.0
+Gradient boosting,cohort gap R1 (trip),0.1391780821917808,-0.0020442858922121547,0.2983197356612548,0.0565,4000.0,,,0.0565
+Gradient boosting,cohort gap R1 (driver),0.159375,0.030933402346445833,0.2852289438502673,0.018,4000.0,,,0.018
+Gradient boosting,cohort gap R1 (task_std),0.1413684210526316,-0.0022242853290183355,0.29846338272150963,0.054,4000.0,,,0.055
+Gradient boosting,cohort gap R1 (route_std),0.14377200577200577,-0.003826857282502449,0.3063668743890515,0.058514628657164294,3999.0,,,0.061015253813453366
+Gradient boosting,rate Alcohol cohort R1 (trip-weighted),0.2191780821917808,0.0945945945945946,0.37142857142857144,,,73.0,20.0,
+Gradient boosting,rate Alcohol cohort R1 (driver-weighted),0.2375,,,,,73.0,20.0,
+Gradient boosting,rate Control cohort R1 (trip-weighted),0.08,0.03,0.14,,,100.0,32.0,
+Gradient boosting,rate Control cohort R1 (driver-weighted),0.078125,,,,,100.0,32.0,
+Gradient boosting,rate Control cohort R2 (trip-weighted),0.09016393442622951,0.03305785123966942,0.15702479338842976,,,122.0,32.0,
+Gradient boosting,rate Control cohort R2 (driver-weighted),0.08854166666666666,,,,,122.0,32.0,
+Gradient boosting,control R2 - R1 (paired drivers),0.010416666666666668,-0.05989583333333333,0.078125,0.77,,,32.0,1.0
+Temporal transformer,cohort gap R1 (trip),0.33424657534246577,0.10586018582899742,0.5691049234920696,0.0035,4000.0,,,0.0105
+Temporal transformer,cohort gap R1 (driver),0.3453125,0.17260959149546107,0.5273300438596491,0.0,4000.0,,,0.0
+Temporal transformer,cohort gap R1 (task_std),0.328578947368421,0.10143511315417252,0.5621256863733014,0.003,4000.0,,,0.01
+Temporal transformer,cohort gap R1 (route_std),0.3165512265512265,0.08285659169009679,0.5565714846544678,0.0085,4000.0,,,0.025500000000000002
+Temporal transformer,rate Alcohol cohort R1 (trip-weighted),0.5342465753424658,0.33802341073467834,0.7297297297297297,,,73.0,20.0,
+Temporal transformer,rate Alcohol cohort R1 (driver-weighted),0.525,,,,,73.0,20.0,
+Temporal transformer,rate Control cohort R1 (trip-weighted),0.2,0.07692307692307693,0.34375,,,100.0,32.0,
+Temporal transformer,rate Control cohort R1 (driver-weighted),0.1796875,,,,,100.0,32.0,
+Temporal transformer,rate Control cohort R2 (trip-weighted),0.18032786885245902,0.09014560842329736,0.2869131147540985,,,122.0,32.0,
+Temporal transformer,rate Control cohort R2 (driver-weighted),0.18229166666666666,,,,,122.0,32.0,
+Temporal transformer,control R2 - R1 (paired drivers),0.0026041666666666644,-0.08333333333333334,0.08085937500000047,0.919,,,32.0,1.0

@@ -200,14 +200,42 @@ install the matching CUDA build for your setup instead, e.g.:
 pip install --index-url https://download.pytorch.org/whl/cu128 torch torchvision
 ```
 
+## 🔬 Follow-up study: session order in IDD
+
+A follow-up analysis asks how much of the alcohol signal in IDD is session change.
+In IDD, the alcohol cohort drives sober first and intoxicated second, and a separate
+control cohort drives both sessions sober. The study uses a pre-hazard window and
+participant-level mixed models (cohort × session × cognitive distraction), and it checks
+whether classifiers flag sober drivers from the alcohol cohort more often. The plan and
+deviations log are in [`docs/HYPOTHESES.md`](docs/HYPOTHESES.md). All aggregate results
+are in [`artifacts/study/RESULTS.md`](artifacts/study/RESULTS.md).
+
+```bash
+python -m scripts.study.build_features        # trip audit + window features (needs data/IDD and dataset/)
+python -m scripts.study.run_analyses          # pre-specified models, diagnostics, classification by window
+python -m scripts.study.run_model_comparison  # LR / SVM / GBM / transformer, nested CV
+python -m scripts.study.run_novelty           # post hoc additions (27-28 Oct 2026)
+python -m scripts.study.run_revision          # main full-factorial model, sensitivity, bootstraps
+python -m scripts.study.figures
+python -m scripts.study.report                # writes artifacts/study/RESULTS.md
+python -m scripts.study.record_provenance
+```
+
+Row-level tables and predictions are written to `artifacts/study/private/`. That folder is
+gitignored because it holds participant IDs and intoxication labels.
+
 ## 📁 Project structure
 
 ```
 src/                  reusable pipeline code (data loading, models, evaluation)
+src/study/            follow-up study: trip audit, window features, mixed models, nested CV
 notebooks/            01 download -> 02/02b baselines -> 03 transformer -> 04 multimodal -> 05 ensemble
 artifacts/             metrics, figures, and confusion matrices produced by the notebooks
+artifacts/study/      follow-up study: aggregate results, audit tables, figures, RESULTS.md
 scripts/               fit_final_model.py, predict.py (CLI demo)
+scripts/study/        follow-up study pipeline (see above)
 app/                    FastAPI demo (`uvicorn app.main:app`)
-tests/                  unit tests for src/evaluation.py, src/classical_baseline.py, and the API
+tests/                  unit tests for src/evaluation.py, src/classical_baseline.py, src/study/, and the API
+docs/HYPOTHESES.md      follow-up study: analysis plan and deviations log
 data/README.md          dataset provenance and how to reproduce from raw IDD data
 ```

@@ -1,0 +1,10 @@
+,value
+formula,haz__crash ~ cohort_v1 + round2 + alcohol + cd + alcohol:cd + haz__speed_at_onset
+family,Binomial (logit link)
+working_correlation,Exchangeable within participant
+standard_errors,Robust (sandwich)
+estimated_within_participant_correlation,-0.03556086676101323
+trips,250
+participants,52
+collisions,22
+inclusion,Valid hazards with an estimated onset (door-open scenario excluded); window haz30

@@ -1,0 +1,11 @@
+cohort,Alcohol cohort,Alcohol cohort,Control cohort,Control cohort
+round,R1,R2,R1,R2
+scenario_code,,,,
+1a,0,0,1,1
+2,2,3,10,3
+2b,1,0,0,0
+3c,4,0,8,2
+5,0,0,3,0
+6e,0,0,3,0
+7a,0,1,1,0
+8a,0,0,2,0

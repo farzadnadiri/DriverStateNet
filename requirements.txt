@@ -10,6 +10,8 @@ PyYAML
 scikit-learn
 scipy
 seaborn
+statsmodels
+tabulate
 torch
 torchvision
 uvicorn[standard]

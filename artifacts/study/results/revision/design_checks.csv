@@ -1,0 +1,4 @@
+model,n_columns,rank,condition_number
+full,15,15,17.753642196691594
+task,19,19,22.021232764167994
+constrained,13,13,11.616817491100166

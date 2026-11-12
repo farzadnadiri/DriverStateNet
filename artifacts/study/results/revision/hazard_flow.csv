@@ -1,0 +1,4 @@
+,step,n_trips,n_drivers
+0,Analysed trips,371,52
+1,Hazard executed as scripted (annotation),351,52
+2,Hazard onset estimable (actor motion; door-open route excluded),250,52

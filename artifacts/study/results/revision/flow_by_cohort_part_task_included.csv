@@ -1,0 +1,13 @@
+cohort,round,task,False,True
+Alcohol cohort,R1,1-back,0,20
+Alcohol cohort,R1,No task,2,38
+Alcohol cohort,R1,Sentence,5,15
+Alcohol cohort,R2,1-back,0,20
+Alcohol cohort,R2,No task,3,37
+Alcohol cohort,R2,Sentence,1,19
+Control cohort,R1,1-back,4,28
+Control cohort,R1,No task,15,49
+Control cohort,R1,Sentence,9,23
+Control cohort,R2,1-back,3,29
+Control cohort,R2,No task,3,61
+Control cohort,R2,Sentence,0,32
